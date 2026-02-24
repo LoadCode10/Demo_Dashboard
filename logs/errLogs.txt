@@ -1,0 +1,7 @@
+2026-01-03 18:48:07	f60f058d-e169-47e6-bd77-e4472ea51807	Error	ENOENT: no such file or directory, stat 'C:\Users\PcPack\Desktop\Dash-BackEnd\views\indeex.html'
+2026-01-03 18:48:38	99a99070-f9e1-4617-b4c5-0d81eacfdef7	Error	ENOENT: no such file or directory, stat 'C:\Users\PcPack\Desktop\Dash-BackEnd\views\indeex.html'
+2026-01-11 13:14:17	6eff8187-f7a2-4d6b-859b-927f4723a6d8	CastError	Cast to ObjectId failed for value "stats" (type string) at path "_id" for model "Task"
+2026-01-11 13:15:02	8db1d837-0050-4b84-baef-72122d209c4a	CastError	Cast to ObjectId failed for value "stats" (type string) at path "_id" for model "Task"
+2026-01-11 13:15:05	c5782199-9812-42f9-a376-034e0f508f59	CastError	Cast to ObjectId failed for value "stats" (type string) at path "_id" for model "Task"
+2026-02-03 22:18:54	1ab07a7f-50d9-48a1-92c5-cb990595d339	TypeError	Cannot read properties of undefined (reading 'fullName')
+2026-02-03 22:18:55	e17037c5-214c-47fc-aadd-3ddadf0c57c2	TypeError	Cannot read properties of undefined (reading 'fullName')

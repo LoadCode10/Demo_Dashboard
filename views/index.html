@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard Project</title>
+</head>
+<body>
+  <div class="dashboard">
+
+   <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="logo">All<span>Done</span></h2>
+
+      <nav id="sidebarNav">
+        <a class="nav-link" data-page="tasks">All Tasks</a>
+        <a class="nav-link active" data-page="team">Team</a>
+        <a class="nav-link" data-page="messages">Messages</a>
+        <a class="nav-link" data-page="company">Company</a>
+        <a class="nav-link" data-page="calls">Calls</a>
+        <a class="nav-link" data-page="payments">Payments</a>
+        <a class="nav-link" data-page="invoices">Invoices</a>
+        <a class="nav-link" data-page="settings">Settings</a>
+      </nav>
+    </aside>
+
+   <!-- MAIN All-Taks-->
+    <main class="main page alltasks-page" id="tasks">
+
+      <!-- HEADER -->
+      <header class="header task-header">
+        <div>
+          <h1>Welcome back, Mehdi</h1>
+          <p class="task-header-date">April 10, 2026</p>
+        </div>
+
+        <div class="header-actions">
+          <input id="search-tasks" type="search" placeholder="Search anything..." />
+          <button class="btn-primary" id="createTaskBtn">+ Create New Task</button>
+        </div>
+
+        <button class="menu-toggle" class="menuToggle"><i class="fa-solid fa-list"></i></button>
+      </header>
+
+      <!-- STATS -->
+      <section class="stats">
+        <div class="stat-card done">
+          <h3>Done</h3>
+          <span class="done-stats"></span>
+          <span class="stat-icon">
+            <i class="fa-regular fa-circle-check"></i>
+          </span>
+        </div>
+        <div class="stat-card progress">
+          <h3>In Progress</h3>
+          <span class="inprogress-stats"></span>
+          <span class="stat-icon">
+            <i class="fa-regular fa-clock"></i>
+          </span>
+        </div>
+        <div class="stat-card queue">
+          <h3>In Queue</h3>
+          <span class="inqueue-stats"></span>
+          <span class="stat-icon">
+            <i class="fa-regular fa-folder-open"></i>
+          </span>
+        </div>
+        <div class="stat-card review">
+          <h3>On Review</h3>
+          <span class="onreview-stats"></span>
+          <span class="stat-icon">
+            <i class="fa-regular fa-eye"></i>
+          </span>
+        </div>
+      </section>
+
+      <!-- TASK TABLE -->
+      <section class="tasks">
+        <table>
+          <thead>
+            <tr>
+              <th>Designer</th>
+              <th>Task</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th class="more-th">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="tasks-body-table">
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+    <!-- MAIN Team--> 
+    <main class="main page team-page active" id="team">
+    <!--Team Header-->
+      <header class="header team-header">
+        <div>
+          <h1>Welcome back, Mehdi</h1>
+          <p class="team-header-date">April 10, 2026</p>
+        </div>
+
+        <div class="header-actions">
+          <input id="search-members" type="search" placeholder="Search anything..." />
+          <button class="btn-primary" id="createMemberBtn">+ Create New Member</button>
+        </div>
+
+        <button class="menu-toggle" class="menuToggle"><i class="fa-solid fa-list"></i></button>
+      </header>
+
+      <div class="team-grid">
+
+        
+        <!-- <div class="team-card">
+          <span class="status">
+            <i class="fa-solid fa-trash"></i>
+            <i class="fa-regular fa-pen-to-square"></i>
+          </span>
+          <img src="https://i.pravatar.cc/100?img=11" class="avatar">
+          <h3>Bessie Cooper</h3>
+          <p class="role">Project Manager</p>
+
+          <div class="info">
+            <p><strong>Department:</strong> Design Team</p>
+            <p><strong>Hired:</strong> 7/27/13</p>
+          </div>
+
+          <div class="contact">
+            <span>📧 ronald@gmail.com</span>
+            <span>📞 (229) 555-0109</span>
+          </div>
+        </div>
+
+        
+        <div class="team-card">
+          <span class="status offline"></span>
+          <img src="https://i.pravatar.cc/100?img=12" class="avatar">
+          <h3>Theresa Webb</h3>
+          <p class="role">Marketing</p>
+
+          <div class="info">
+            <p><strong>Department:</strong> Marketing</p>
+            <p><strong>Hired:</strong> 10/28/12</p>
+          </div>
+
+          <div class="contact">
+            <span>📧 theresa@gmail.com</span>
+            <span>📞 (406) 555-0120</span>
+          </div>
+        </div> -->
+
+      </div>
+
+    </main>
+
+    <main class="main page messages-page " id="messages">
+      <!--Messages HEADER -->
+      <header class="header">
+        <div>
+          <h1>Welcome back, Mehdi</h1>
+          <p>April 10, 2026</p>
+        </div>
+
+        <div class="header-actions">
+          <input id="search-tasks" type="search" placeholder="Search anything..." />
+          <!-- <button class="btn-primary" id="createTaskBtn">+ Create New Task</button> -->
+           <button class="menu-toggle" class="menuToggle"><i class="fa-solid fa-list"></i></button>
+        </div>
+
+        <!-- <button class="menu-toggle" class="menuToggle"><i class="fa-solid fa-list"></i></button> -->
+      </header>
+
+      <div class="messages-container" id="messagesContainer">
+        <!-- Messages will be injected here -->
+      </div>
+
+    </main>
+  </div>
+
+  <div id="memberModal" class="modal-overlay">
+
+    <div class="modal-2">
+      <h2>Add Team Member</h2>
+
+      <form id="memberForm">
+
+        <div class="form-group">
+          <input type="text" id="fullName" required />
+          <label>Full Name</label>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="cin" required />
+          <label>CIN</label>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="profil" required />
+          <label>Profile (Role)</label>
+        </div>
+
+        <div class="form-group">
+          <select id="departement" required>
+            <option value="">Select Department</option>
+            <option value="Front-End">Front-End</option>
+            <option value="Back-End">Back-End</option>
+            <option value="Design UX/UI">Design UX/UI</option>
+            <option value="Cyber-Security">Cyber-Security</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input type="date" id="hiredDate" required />
+          <label>Hire Date</label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" required />
+          <label>Email</label>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="phoneNum" required />
+          <label>Phone Number</label>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="closeModal">Cancel</button>
+          <button type="submit" id="save-btn">Save Member</button>
+          <button type="button" id="updateMemberBtn">Update Member</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div> 
+
+  <div id="taskModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&#10060;</span>
+      <h2>Create New Task</h2>
+      
+      <form id="taskForm">
+        <label for="taskOwner">Task Owner:</label>
+        <input type="text" id="taskOwner" name="taskOwner" required>
+
+        <label for="taskTitle">Task Title:</label>
+        <input type="text" id="taskTitle" name="taskTitle" required>
+
+        <label for="taskStatus">Status:</label>
+        <select id="taskStatus" name="taskStatus" required>
+          <option value="In Queue">In Queue</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+          <option value="On Review">On Review</option>
+        </select>
+
+        <label for="taskPriority">Priority:</label>
+        <select id="taskPriority" name="taskPriority" required>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" required>
+
+        <button type="submit" id="saveTaskBtn" class="saveTaskBtn">Save Task</button>
+        <button type="button" id="updateTaskBtn" class="updateTaskBtn">Update Task</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="emailModalOverlay" class="modal-overlay-email" >
+  </div>
+
+  <div class="member-tasks-modal"   id="memberTasksModal">
+    <div class="member-modal-content">
+      <div class="member-modal-header">
+        <h2 id="memberName">Member Tasks</h2>
+        <span class="close-member-modal" id="closeMemberModal">&times;</span>
+      </div>
+
+      <div class="member-modal-body">
+        <p class="task-count">
+          Total Tasks: <strong id="memberTaskCount">0</strong>
+        </p>
+
+        <div class="member-task-list" id="memberTaskList">
+          <!-- Tasks will be injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="taskModalInfo" class="modalInfo" style="display: none;">
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
